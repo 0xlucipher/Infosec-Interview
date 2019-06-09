@@ -5,6 +5,9 @@ collection of interview questions for Information Security domain
 * [Application Security](#application-security)
 * [Encryption](#encryption)
 * [Forensics](#forensics)
+* [General](#General)
+* [Malware](#Malware)
+* [Network Forensic](#Network Forensic)
 
 ## Application Security
 
@@ -72,9 +75,46 @@ Collect the original mail from user or collect the mailbox dump, identify the su
 important fields are
 From, to, Subject, date (time zone difference can be issue) CC, BCC, In-reply-to ID, X-Originating-IP, Received and SMTP server hop details. (Link)
 
-**Q: Explain the difference between a logical, file system and physical extraction of a mobile phone.**
-**Q: You are given a phone and asked for all location data relating to Los Angeles Airport. Explain how you would conduct your analysis.**
+**Q. Explain the difference between a logical, file system and physical extraction of a mobile phone.**
 
+**Q. You are given a phone and asked for all location data relating to Airport. Explain how you would conduct your analysis.**
+
+## General
+
+**Q. Are open source projects more or less secure than proprietary projects?**
+
+The securities of these projects depends mainly on the size of the project, the total number of the developers who are working under this project and the one factor, which is most essential as well as important, is the control of the quality. Just the type of project won’t determine its quality, the inside matter of the corresponding projects will matter.
+
+## Malware
+
+**Q. What is static analysis?**
+
+**Q. What is dynamic analysis?**
+
+**Q. What type of items do you look for during static analysis?**
+
+**Q. How does static analysis influence how dynamic analysis is performed?**
+
+**Q. Why would you disassemble or debug an application?**
+
+**Q. What is a Windows Portable Executable?**
+
+**Q. How would a piece of malware maintain persistence?**
+
+**Q. What is the ESP register used for in the Intel x86–32 architectures?**
+
+
+## Network Forensic
+
+**Q. PING work on which port?**
+
+‘ping’ uses ICMP, specifically ICMP echo request and ICMP echo reply packets. There is no ‘port’ associated with ICMP. Ports are associated with the two IP transport layer protocols, TCP and UDP. ICMP packets are identified by the ‘protocol’ field in the IP datagram header.
+
+**Q. Which tool is used for Network forensics?**
+
+**Q. Where you’ll find HTTP referrer Link?**
+
+**Q. What is importance of web user agent?**
 
 
 ## Credits
