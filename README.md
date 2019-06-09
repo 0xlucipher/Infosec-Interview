@@ -1,4 +1,4 @@
-# Information Security Interview Questions
+# Information Security Interview Questions ![GitHub](https://img.shields.io/github/license/0xlucipher/Infosec-Interview.svg?style=popout-square) ![version](https://img.shields.io/badge/version-0.0.1-red.svg?style=popout-square)
 collection of interview questions for Information Security domain
 
 ## Table of Contents
