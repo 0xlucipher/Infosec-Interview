@@ -7,13 +7,30 @@ collection of interview questions for Information Security domain
 * [Forensics](#forensics)
 * [General](#General)
 * [Malware](#Malware)
-* [Network Forensic](#Network Forensic)
+* [Network Forensic](#Network-Forensic)
 
 ## Application Security
 
 **Q. If you needed to encrypt and compress data for transmission, which would you do first and why?**
 
 Compress then encrypt. Because encryption takes up resources and can be cumbersome to perform. (If you encrypt first, then compress, then your compression will be useless. Compression doesn't work on random data.) [resource](https://blog.appcanary.com/2016/encrypt-or-compress.html)
+
+**Q. What are the various ways to handle brute forcing?**
+
+* Account Lockouts/timeouts
+* API rate limiting
+* IP restrictions
+* Fail2ban
+* ...etc
+
+**Q. What is Cross-Site Request Forgery?**
+
+Cross site request forgery (CSRF), also known as XSRF, Sea Surf or Session Riding, is an attack vector that tricks a web browser into executing an unwanted action in an application to which a user is logged in.
+Defense includes but are not limited to:
+* check origins header & referer header
+* check CSRF tokens or nonce
+
+**Q. What is Cross-Site Scripting? What are the different types of XSS? How to defend against XSS?**
 
 ## Encryption 
 
@@ -42,6 +59,14 @@ One common use is the the obfuscation of source code so that it’s harder to re
 It’s important to note that obfuscation is not a strong control (like properly employed encryption) but rather an obstacle. It, like encoding, can often be reversed by using the same technique that obfuscated it. Other times it is simply a manual process that takes time to work through.
 
 Another key thing to realize about obfuscation is that there is a limitation to how obscure the code can become, depending on the content being obscured. If you are obscuring computer code, for example, the limitation is that the result must still be consumable by the computer or else the application will cease to function.
+
+**Q. How is TLS attacked? How has TLS been attacked in the past? Why was it a problem? How was it fixed?**
+
+* [Weak ciphers](https://www.owasp.org/index.php/Testing_for_Weak_SSL/TLS_Ciphers,_Insufficient_Transport_Layer_Protection_(OTG-CRYPST-001))
+* [Heartbleed](http://heartbleed.com/)
+* [BEAST](https://blog.qualys.com/ssllabs/2013/09/10/is-beast-still-a-threat)
+* [CRIME](https://security.stackexchange.com/questions/19911/crime-how-to-beat-the-beast-successor/19914#19914)
+* [POODLE](https://censys.io/blog/poodle)
 
 ## Forensics
 **Q. What is Chain of custody?**
@@ -73,7 +98,7 @@ Data carving is different than data recovery in that data carving searches throu
 Collect the original mail from user or collect the mailbox dump, identify the suspicious mail extract them in eml/msg format (to preserve metadata) extract email header from all the files. And based on email headers (usually taken bottom to top approach process) we can identify original sender (X-originating-IP) and mail server (message-id).
  
 important fields are
-From, to, Subject, date (time zone difference can be issue) CC, BCC, In-reply-to ID, X-Originating-IP, Received and SMTP server hop details. (Link)
+From, to, Subject, date (time zone difference can be issue) CC, BCC, In-reply-to ID, X-Originating-IP, Received and SMTP server hop details. [Link](https://fenix.tecnico.ulisboa.pt/downloadFile/1970943312267438/csf-13.pdf)
 
 **Q. Explain the difference between a logical, file system and physical extraction of a mobile phone.**
 
@@ -84,6 +109,22 @@ From, to, Subject, date (time zone difference can be issue) CC, BCC, In-reply-to
 **Q. Are open source projects more or less secure than proprietary projects?**
 
 The securities of these projects depends mainly on the size of the project, the total number of the developers who are working under this project and the one factor, which is most essential as well as important, is the control of the quality. Just the type of project won’t determine its quality, the inside matter of the corresponding projects will matter.
+
+**Q. What is CIA triangle?**
+
+* Confidentiality: Keeping the information secret.
+* Integrity: Keeping the information unaltered.
+* Availability: Information is available to the authorized parties at all times.
+
+**Q. What is the difference between threat, vulnerability and risk? give scenario bases example**
+
+threat is what a potential attacker poses, by potentially using a system vulnerability that was never identified as a risk. Using this answer provides context for the three terms together, but you can define them separately.
+
+* A threat is the possibility of an attack.
+* A vulnerability is a weakness in the system.
+* Risks are items that may cause harm to the system or organization.
+
+
 
 ## Malware
 
