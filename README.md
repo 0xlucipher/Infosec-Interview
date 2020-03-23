@@ -160,4 +160,4 @@ threat is what a potential attacker poses, by potentially using a system vulnera
 
 ## Credits
 
-[Daniel Miessler](https://danielmiessler.com/study/infosec_interview_questions/),@pbnj, [Jordan Potti](https://jordanpotti.com/2016/12/28/what-to-know-for-your-first-infosec-interview/), [Teckk2](https://teckk2.github.io/misc/2018/01/03/Infosec-Interview_Questions_Part-1.html)
+[Daniel Miessler](https://danielmiessler.com/study/infosec_interview_questions/),[@pbnj](https://github.com/pbnj/infosec-interview-questions), [Jordan Potti](https://jordanpotti.com/2016/12/28/what-to-know-for-your-first-infosec-interview/), [Teckk2](https://teckk2.github.io/misc/2018/01/03/Infosec-Interview_Questions_Part-1.html)
